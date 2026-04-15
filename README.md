@@ -1,6 +1,6 @@
 ***
 
-# Terminal Snake in C
+# Snake-Game in C
 
 A classic Snake game implemented entirely in C for the Windows command prompt. This project demonstrates foundational game development concepts, including real-time game loops, state management, and memory manipulation. 
 
@@ -24,11 +24,11 @@ A primary focus of this project was optimizing terminal rendering. Instead of re
 2. Open your terminal or command prompt in the project directory.
 3. Compile the code using GCC:
    ```bash
-   gcc main.c -o snake.exe
+   gcc Terminal_Snake.c
    ```
 4. Run the executable:
    ```bash
-   .\snake.exe
+   .\a.exe
    ```
 
 ## Controls
