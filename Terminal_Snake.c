@@ -2,6 +2,8 @@
 #include <conio.h>
 #include <stdlib.h>
 #include <windows.h>
+#include <time.h>
+#include <ctype.h>
 
 typedef struct Pair {
     int first;
@@ -116,6 +118,7 @@ void move(int x, int y){
 void keyboard_input(){
     if (kbhit()) {
         char c = _getch();
+        c = tolower(c);
 
         if(c == 'd') move_dir = (Pair){0,1};
         else if(c == 'a') move_dir = (Pair){0,-1};
@@ -153,6 +156,7 @@ void hidecursor(){
 }
 
 int main(){
+    srand(time(NULL));
     system("cls");
     hidecursor();
     while(!GameOver){
